@@ -21,7 +21,8 @@ body {
 }
 
 .left-half,
-.right-half {
+.natasha-image,
+.trans-support-image {
   width: 50%;
   padding: 60px;
 }
@@ -94,8 +95,20 @@ header a:focus {
   background-color: white;
 }
 
-.right-half {
+.natasha-image {
   background: url("/natasha.jpeg") center center / cover no-repeat;
+}
+
+.trans-support-image {
+  background: url("/trans.jpeg") center center / cover no-repeat;
+}
+
+.blue {
+  color: #5bcefa;
+}
+
+.pink {
+  color: #f5a9b8;
 }
 
 @media (max-width: 768px) {
@@ -104,12 +117,14 @@ header a:focus {
   }
 
   .left-half,
-  .right-half {
+  .natasha-image,
+  .trans-support-image {
     width: 100%;
     padding: 40px;
   }
 
-  .right-half {
+  .natasha-image,
+  .trans-support-image {
     height: 50vh;
   }
 }
