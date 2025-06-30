@@ -1,0 +1,16 @@
+{
+  "name": "natasha-testing",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+"scripts": {
+    "deploy": "gh-pages -d public"
+},
+  "devDependencies": {
+    "@types/bun": "latest",
+    "gh-pages": "^6.3.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
