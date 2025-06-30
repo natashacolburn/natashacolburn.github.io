@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  overflow: auto;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+}
+
+.left-half,
+.right-half {
+  width: 50%;
+  padding: 60px;
+}
+
+.left-half {
+  background-color: #efefe6;
+}
+
+.left-half h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.left-half p,
+li {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+a {
+  color: #7a9d76; /* calm olive green */
+  text-decoration: none;
+  border-bottom: 1px solid #a3b18a; /* light sage border for subtle emphasis */
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+a:hover {
+  color: #5e7d5d; /* deeper natural green on hover */
+  border-color: #5e7d5d;
+}
+
+header {
+  background-color: #efefe6; /* keep bone */
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d0d7c8; /* soft natural green-gray */
+}
+
+header a {
+  color: #5e7d5d; /* deeper calm green for visibility */
+  text-decoration: none;
+  padding: 8px 12px;
+  margin: 0 6px;
+
+  border-bottom: none;
+  border-radius: 6px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+header a:hover {
+  background-color: #dde3d3; /* soft greenish highlight on hover */
+  color: #3f5e3f; /* richer green for contrast */
+}
+
+header a:focus {
+  outline: 2px solid #a3b18a; /* sage green for accessibility focus */
+  outline-offset: 2px;
+}
+
+.right-half {
+  background: url("/natasha.jpeg") center center / cover no-repeat;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-half,
+  .right-half {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .right-half {
+    height: 50vh;
+  }
+}
