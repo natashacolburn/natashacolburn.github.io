@@ -86,6 +86,14 @@ header a:focus {
   outline-offset: 2px;
 }
 
+.embed {
+  border: 2px solid #7a9d76; /* natural olive green */
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 10px;
+  background-color: white;
+}
+
 .right-half {
   background: url("/natasha.jpeg") center center / cover no-repeat;
 }
