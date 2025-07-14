@@ -90,9 +90,9 @@ header a:focus {
 .embed {
   border: 2px solid #7a9d76; /* natural olive green */
   border-radius: 12px;
-  padding: 16px;
+  padding: 4px;
   margin-top: 10px;
-  background-color: white;
+  background-color: #efefe6;
 }
 
 .natasha-image {
